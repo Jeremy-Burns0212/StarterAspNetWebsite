@@ -1,1 +1,165 @@
-﻿<p>Check back later for student information</p>
+﻿@{
+    ViewData["Title"] = "Students - Westfield Institute";
+}
+
+<div class="container">
+    <header class="student-header">
+        <div>
+            <h1 style="margin:0;">Westfield Institute of Technology</h1>
+            <p class="muted-2" style="margin:2px 0 0 0;">A fictional leader in applied sciences — Serving curious minds since 1899</p>
+        </div>
+        <div class="contact">
+            <strong>Contact</strong><br />
+            1234 Academy Way<br />
+            Westfield, WF 01234<br />
+            (555) 010-2020<br />
+            admissions@westfield.example
+        </div>
+    </header>
+
+    <section class="section-alt" style="background:#f8f9fb; padding:14px; margin-bottom:18px;">
+        <h2 style="margin-top:0;">About Westfield Institute</h2>
+        <p style="margin:0 0 8px 0; color:#444;">
+            Westfield Institute is a fictional university focused on technology, engineering and design.
+            Our community is made up of undergraduate and graduate students working on applied
+            research and industry projects. Below is an example roster with sample student data for
+            development and demo purposes.
+        </p>
+        <small style="color:#666;">This page contains mock data only — no real people are represented.</small>
+    </section>
+
+    <section>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px;">
+            <h3 style="margin:0;">Student Directory</h3>
+            <div>
+                <div class="search-box">
+                    <input type="text" placeholder="Filter by name or major" />
+                    <button class="btn">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <div style="overflow:auto; border:1px solid #e3e6ea; border-radius:6px;">
+            <table style="width:100%; border-collapse:collapse; min-width:900px;">
+                <thead style="background:#eef3fb; color:#0b3d91; text-align:left;">
+                    <tr>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">ID</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">Name</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">Program</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">Year</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">GPA</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">Email</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">Advisor</th>
+                        <th style="padding:10px 12px; border-bottom:1px solid #dde7f2;">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background:#fff;">
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1001</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Ava Mercer</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Computer Science</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Senior</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.86</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">ava.mercer@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Dr. L. Hastings</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1002</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Ethan Park</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Electrical Engineering</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Junior</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.62</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">ethan.park@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Prof. G. Moreno</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr style="background:#fff;">
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1003</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Priya Kulkarni</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Data Science</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Sophomore</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.94</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">priya.k@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Dr. H. Kim</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1004</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Liam O'Connor</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Mechanical Engineering</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Senior</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.48</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">liam.oconnor@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Prof. S. Ramirez</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">On Leave</td>
+                    </tr>
+                    <tr style="background:#fff;">
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1005</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Zoe Martinez</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Product Design</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Graduate</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.79</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">zmartinez@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Dr. E. Collins</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1006</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Noah Singh</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Cybersecurity</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Senior</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.71</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">noah.singh@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Prof. R. Becker</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr style="background:#fff;">
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1007</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Maya Jensen</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Biomedical Engineering</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Junior</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.67</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">maya.j@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Dr. A. Nguyen</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1008</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Carlos Reyes</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Information Systems</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Sophomore</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.50</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">c.reyes@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Prof. N. Patel</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Enrolled</td>
+                    </tr>
+                    <tr style="background:#fff;">
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">WIT-1009</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Hannah Li</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Software Engineering</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Senior</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">3.95</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">h.li@westfield.example</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Dr. M. Owens</td>
+                        <td style="padding:10px 12px; border-bottom:1px solid #f1f4f8;">Graduating</td>
+                    </tr>
+                    <tr>
+                        <td style="padding:10px 12px;">WIT-1010</td>
+                        <td style="padding:10px 12px;">Owen Park</td>
+                        <td style="padding:10px 12px;">Robotics</td>
+                        <td style="padding:10px 12px;">Graduate</td>
+                        <td style="padding:10px 12px;">3.80</td>
+                        <td style="padding:10px 12px;">owen.park@westfield.example</td>
+                        <td style="padding:10px 12px;">Prof. G. Moreno</td>
+                        <td style="padding:10px 12px;">Enrolled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer style="margin-top:18px; color:#666; font-size:13px;">
+        <p style="margin:0;">Fake dataset generated for demo and UI testing. For real deployments replace with live database records.</p>
+    </footer>
+</div>

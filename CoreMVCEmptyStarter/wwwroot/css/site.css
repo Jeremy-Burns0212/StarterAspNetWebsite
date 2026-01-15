@@ -1,4 +1,62 @@
-﻿body {
-	background-color: aquamarine;
+﻿/* Global styles for the demo site (moved from inline styles) */
+body {
+    background-color: deepskyblue;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+.container {
+    margin: 24px;
+}
+
+.site-header {
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.muted { color: #666; }
+.muted-2 { color: #555; }
+
+.section { background: #fbfcfe; padding: 14px; border-radius: 6px; margin-bottom: 14px; }
+.section.alt { background: #fff; border: 1px solid #eef3fb; }
+
+.cards { display:flex; gap:18px; flex-wrap:wrap; }
+.card { flex:1 1 320px; min-width:240px; border:1px solid #e6ebf2; border-radius:6px; padding:12px; background:#fff; }
+.card.small { flex:1 1 260px; min-width:260px; }
+
+.card-alt { border:1px solid #e6ebf2; border-radius:6px; padding:10px; background:#fbfbff; }
+
+.table-wrapper { overflow:auto; border:1px solid #e3e6ea; border-radius:6px; }
+.table { width:100%; border-collapse:collapse; min-width:900px; }
+.table thead { background:#eef3fb; color:#0b3d91; text-align:left; }
+.table th, .table td { padding:10px 12px; border-bottom:1px solid #f1f4f8; }
+
+.search-box { display:flex; align-items:center; gap:8px; }
+.search-box input[type="text"] { padding:6px 8px; border:1px solid #ccd; border-radius:4px; }
+.btn { margin-left:8px; padding:6px 10px; border-radius:4px; border:1px solid #88a; background:#f0f6ff; cursor:pointer; }
+
+.library-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:12px; margin-top:10px; }
+
+.footer { margin-top:18px; color:#666; font-size:13px; }
+
+.contact { text-align:right; color:#333; }
+
+.policy-section { background:#f6f8fb; padding:14px; border-radius:6px; margin-bottom:12px; }
+.policy-address { font-style: normal; color:#666; }
+
+/* Navigation */
+nav ul { list-style:none; padding:0; margin:0 0 12px 0; display:flex; gap:12px; }
+nav a { text-decoration:none; color: #0b3d91; }
+
+.student-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+
+/* Responsive tweaks */
+@media (max-width:600px) {
+    .site-header { flex-direction:column; align-items:flex-start; gap:8px; }
+    .cards { flex-direction:column; }
 }
 

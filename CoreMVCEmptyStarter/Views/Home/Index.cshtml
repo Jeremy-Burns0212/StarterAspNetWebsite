@@ -1,8 +1,92 @@
-﻿<h1>Welcome to my website</h1>
+﻿@{
+    ViewData["Title"] = "Campus Services - Dining & Library";
+}
 
-<ol>
-	@for (int i = 1; i<= 10; i++)
-	{
-		<li>Food @i</li>
-	}
-</ol>
+<div class="container">
+    <header class="site-header">
+        <h1 style="margin:0;">Campus Services — Cafeteria & Library</h1>
+        <small class="muted">Westfield Institute • Demo Content</small>
+    </header>
+
+    <section class="section">
+        <h2 style="margin-top:0;">Cafeteria Menu & Hours</h2>
+        <p class="muted-2">Our campus cafeteria serves a range of hot and cold options every weekday. Below is a sample menu and service information used for UI/demo purposes.</p>
+
+        <div class="cards">
+            <div class="card">
+                <h3 style="margin:0 0 8px 0;">Daily Specials</h3>
+                <ul style="margin:0; padding-left:18px; color:#333;">
+                    <li><strong>Monday:</strong> Grilled Lemon Herb Chicken Bowl — roasted vegetables, quinoa</li>
+                    <li><strong>Tuesday:</strong> Spicy Black Bean Tacos — corn tortillas, pico de gallo, avocado</li>
+                    <li><strong>Wednesday:</strong> Teriyaki Salmon Plate — jasmine rice, steamed greens</li>
+                    <li><strong>Thursday:</strong> Mediterranean Falafel Wrap — tzatziki, mixed greens</li>
+                    <li><strong>Friday:</strong> Chef's Burger — house pickles, sweet potato fries</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3 style="margin:0 0 8px 0;">Hours & Services</h3>
+                <p style="margin:0; color:#333;">Open Monday–Friday: 7:30 AM — 7:00 PM<br />Weekend hours: 9:00 AM — 3:00 PM (limited)</p>
+                <p style="margin:8px 0 0 0; color:#333;"><strong>Takeout:</strong> Available. <strong>Payment:</strong> Card, campus meal plan, mobile pay.</p>
+            </div>
+
+            <div class="card small">
+                <h3 style="margin:0 0 8px 0;">Dietary & Accessibility</h3>
+                <ul style="margin:0; padding-left:18px; color:#333;">
+                    <li>Vegetarian and vegan options daily</li>
+                    <li>Gluten-free menu items clearly labeled</li>
+                    <li>Allergen information available on request</li>
+                    <li>Wheelchair accessible seating and server assistance</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top:12px; font-size:14px; color:#555;">Sample prices (demo only): Sandwiches $6–$9, Entrees $8–$13, Beverages $1.50–$4.00.</div>
+    </section>
+
+    <section class="section alt">
+        <h2 style="margin-top:0;">Campus Library — Amenities & Activities</h2>
+        <p class="muted-2">The Westfield Institute Library is a community hub offering quiet study, collaborative spaces, and recreational activities to support student life.</p>
+
+        <div class="library-grid">
+            <div class="card-alt">
+                <h4 style="margin:0 0 8px 0;">Study & Tech</h4>
+                <ul style="margin:0; padding-left:18px; color:#333;">
+                    <li>Public computers with printing and scanning</li>
+                    <li>Reserveable group study rooms with whiteboards</li>
+                    <li>Quiet reading floors and lounge areas</li>
+                    <li>Wi‑Fi and laptop checkout (demo eligibility required)</li>
+                </ul>
+            </div>
+
+            <div class="card-alt">
+                <h4 style="margin:0 0 8px 0;">Games & Recreation</h4>
+                <ul style="margin:0; padding-left:18px; color:#333;">
+                    <li>Puzzle corner — jigsaw puzzles and brain teasers</li>
+                    <li>Card game evenings — decks provided for casual tournaments</li>
+                    <li>Board games library — check out a game for onsite play</li>
+                    <li>Comfortable seating for casual socializing</li>
+                </ul>
+            </div>
+
+            <div class="card-alt">
+                <h4 style="margin:0 0 8px 0;">Workshops & Events</h4>
+                <p style="margin:0 0 6px 0; color:#333;">Weekly events (sample schedule):</p>
+                <ul style="margin:0; padding-left:18px; color:#333;">
+                    <li><strong>Monday:</strong> Coding Study Group — 6:00 PM, Room 210</li>
+                    <li><strong>Wednesday:</strong> Puzzle Night — 7:00 PM, Commons</li>
+                    <li><strong>Thursday:</strong> Research Help Desk — 2:00–4:00 PM</li>
+                    <li><strong>Friday:</strong> Casual Card Games — 5:30 PM, Lounge</li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="margin-top:12px; color:#555;">Library hours: Mon–Thu 8:00 AM — 11:00 PM, Fri 8:00 AM — 8:00 PM, Sat–Sun 10:00 AM — 6:00 PM.</div>
+
+        <div style="margin-top:12px; border-top:1px dashed #e6ebf2; padding-top:10px; color:#666; font-size:14px;">
+            <strong>Usage Guidelines (demo):</strong> Please respect quiet areas, return games and puzzles after use, and follow staff instructions. This page contains mock activity information for demonstration only.
+        </div>
+    </section>
+
+    <footer class="footer">Content generated for UI/demo. Replace with live schedules and menus when integrating with real services.</footer>
+</div>
